@@ -26,10 +26,28 @@ const Repos = () => {
 		})
 		.slice(0, 5);
 
+	let chartData = [
+		{
+			label : 'HTML',
+			value : 30
+		},
+		{
+			label : 'CSS',
+			value : 60
+		},
+		{
+			label : 'JS',
+			value : 10
+		}
+	];
+
 	return (
 		<section className='section'>
 			<Wrapper className='section-center'>
 				<Pie3D data={languages} />
+				<div />
+				<Doughnut2D data={chartData} />
+				<div />
 			</Wrapper>
 		</section>
 	);
